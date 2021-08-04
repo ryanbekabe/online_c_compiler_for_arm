@@ -29,21 +29,24 @@
 
 				<?php
 					$navaktif = $this->session->userdata('navaktif');
+					$varberanda = 'beranda';
+					$vardaftarsc = 'daftarsc';
+					$varpengaturan = 'pengaturan';
 				?>
                 <center><h1>Selamat Datang <?php echo $this->session->userdata('nama'); ?></h1></center>
                 <hr/>
                 <ul class="nav nav-tabs">
 				<li class="nav-item">
-					<a class="nav-link <?php if($navaktif=='beranda') {echo 'active';}; ?>" href="beranda">+ Baru</a>
+					<a class="nav-link <?php if($navaktif=='beranda') {echo 'active'; $varberanda='#';}; ?>" href="<?php echo $varberanda;?>">+ Baru</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php if($navaktif=='daftarsc') {echo 'active';}; ?>" href="daftarsc">Daftar Source Code</a>
+					<a class="nav-link <?php if($navaktif=='daftarsc') {echo 'active'; $vardaftarsc='#';}; ?>" href="<?php echo $vardaftarsc;?>">Daftar Source Code</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link <?php if($navaktif=='pengaturan') {echo 'active';}; ?>" href="pengaturan">Pengaturan</a>
+					<a class="nav-link <?php if($navaktif=='pengaturan') {echo 'active'; $varpengaturan='#';}; ?>" href="<?php echo $varpengaturan;?>">Pengaturan</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link disabled" href="profil">Profil</a>
+					<a class="nav-link disabled" href="#">Profil</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="<?php echo base_url(); ?>index.php/masuk/logout">Keluar</a>

@@ -36,7 +36,14 @@ $config['base_url'] = 'http://c-compiler.juli.my.id/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+//Mode tanpa index.php
+//.htaccess
+//RewriteEngine On
+//RewriteCond %{REQUEST_FILENAME} !-f
+//RewriteCond %{REQUEST_FILENAME} !-d
+//RewriteRule ^(.*)$ index.php/$1 [L]
+//$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

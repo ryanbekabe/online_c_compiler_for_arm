@@ -17,7 +17,7 @@ ___
 #echo "# online_c_compiler_for_arm" >> README.md
 git init
 git add .
-git commit -m "10:58 07/08/2021 Text Editor dengan Syntax Highlight- push 3"
+git commit -m "14:54 07/08/2021 Text Parsing copy data button action - push 4"
 git branch -M main
 git remote add origin https://github.com/ryanbekabe/online_c_compiler_for_arm.git
 git push -u origin main

@@ -1,7 +1,7 @@
 *{margin: 0;}
 
 .header {
-    background: #0000ff; /*#57a958;*/
+    background: #57a958; /*#57a958;*/
     text-align: left;
     font-size: 20px;
     font-weight: bold;
@@ -11,7 +11,7 @@
 }
 
 .control-panel {
-    background: #0000ff; /*lightgray;*/
+    background: #lightgray; /*lightgray;*/
     text-align: right;
     padding: 4px;
     font-family: sans-serif;
@@ -25,15 +25,15 @@
 #editor { height: 200px; }
 
 .button-container {
-    text-align: right;
-    padding: 4px;
+    /*text-align: right;*/
+    /*padding: 4px;*/
 }
 
 .btn {
-    background: #0000ff; /*#57a958;*/
-    color: #0000ff;
-    padding: 8px;
-    border: 0;
+    background: #0066ff; /*#57a958;*/
+    color: white;
+    /*padding: 8px;*/
+    /*border: 0;*/
 }
 
 .output {
